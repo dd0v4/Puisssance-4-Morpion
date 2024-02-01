@@ -1,0 +1,215 @@
+header{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 0.1px solid gray;
+}
+
+h1{
+    font-size: 2.5em;
+}
+body{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+
+    font-family: helvetica;
+}
+
+main{
+    padding: 20px;
+}
+
+#articles{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+    
+}
+article{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+article img{
+    width: 300px;
+    height: 280px;
+    box-shadow: 1px 1px 1px 4px black;
+}
+article button{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid #1b1a1f;
+    font-weight: bold;
+    font-size: 1.50em;
+}
+
+article button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+
+
+#footer{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 0.1px solid gray;
+    font-size: 1.3em;
+    position:absolute;
+    bottom: 0;
+}
+
+#tableauPuissance4{
+    display: none;
+    height: 580px;
+    justify-content: space-around;
+}
+#tableauPuissance4 td{
+    width: 100px;
+    border: 1px solid black;
+}
+
+#tableauMorpion{
+    display: none;
+    height: 580px;
+    justify-content: space-around;
+}
+#tableauMorpion td{
+    width: 200px;
+    border: 1px solid black;
+}
+ 
+td+td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#tableauMorpion table{
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#tableauPuissance4 table {
+    border-collapse: collapse;
+    background-color: blue;
+}
+
+.cercle{
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 100px;
+    padding: 9px;
+    width: 70%;
+    height: 70px;
+}
+
+.case{
+    padding: 3px;
+    margin: 3px;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    overflow: hidden;
+}
+.case:hover{
+    cursor:pointer;
+}
+
+.cercle:hover{
+    cursor: pointer;
+}
+
+
+#cerclemp {
+    background-color: white;
+    width: 60%;
+    height: 120px;
+    position: relative;
+}
+#croix{
+    background-color: white;
+    width: 60%;
+    height: 140px;
+    position: relative;
+}
+#croix:before,
+#croix:after,
+#cerclemp:before,
+#cerclemp:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+}
+
+#croix:before {
+    width: 10px;
+    height: 150px;
+    top: 0;
+    left: 70px; 
+    margin-left: 30px;
+    transform: rotate(45deg);
+}
+
+#croix:after {
+    width: 10px;
+    height: 150px;
+    margin-left: 30px;
+    top: 0;
+    left: 70px; 
+    transform: rotate(-45deg);
+}
+
+#cerclemp {
+    border-radius: 100px;
+    margin-left: 30px;
+    border: 10px solid black;
+}
+
+#gagnant{
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+#joueurs{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+    
+}
+
+#joueurs button{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid #1b1a1f;
+    font-weight: bold;
+    font-size: 1.50em;
+}
+
+#joueurs button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
